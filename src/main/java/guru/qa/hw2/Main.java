@@ -2,6 +2,7 @@ package guru.qa.hw2;
 
 public class Main {
     public static void main(String[] args) {
+
         Storehouse storehouse = new Storehouse();
         storehouse.printAllProduct();
         storehouse.addNewItem("Bread", 10);
@@ -23,5 +24,16 @@ public class Main {
         tvBrands.deleteBrand("Samsung");
         tvBrands.printAll();
 
+        Animals animals = new Animals();
+        animals.addAnimals("Cat");
+        animals.addAnimals("Rat");
+        animals.addAnimals("Bat");
+        animals.printAll();
+        animals.removeAnimal(2);
+        animals.printAll();
+        animals.addInto(1,"fish");
+        animals.printAll();
+        animals.rename(2,"Dog");
+        animals.printAll();
     }
 }
