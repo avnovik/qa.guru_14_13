@@ -13,7 +13,7 @@ public class Storehouse {
 
     void printAllProduct() {
         if (storehouse.isEmpty()) {
-            System.out.println("Warehouse is empty");
+            System.out.println("Warehouse is empty.");
         } else {
             for (Map.Entry<String, Integer> pair : storehouse.entrySet()) {
                 String key = pair.getKey();
