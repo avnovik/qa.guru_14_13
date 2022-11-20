@@ -11,7 +11,6 @@ public class Main {
         storehouse.findProduct("Tomato");
         storehouse.findProduct("Snickers");
 
-
         TvBrands tvBrands = new TvBrands();
         tvBrands.printAll();
         tvBrands.addBrands("Sony");
@@ -29,11 +28,23 @@ public class Main {
         animals.addAnimals("Rat");
         animals.addAnimals("Bat");
         animals.printAll();
+        animals.whatIndex("Bat");
         animals.removeAnimal(2);
         animals.printAll();
-        animals.addInto(1,"fish");
+        animals.addInto(2, "fish");
         animals.printAll();
-        animals.rename(2,"Dog");
+        animals.rename(2, "Dog");
         animals.printAll();
+
+        Planets planets = new Planets();
+        String[] planetsArr = {"Venus", "Mars", "Jupiter", "Saturn", "Uranus"};
+        planets.addPlanets("Earth");
+        planets.addPlanetsArr(planetsArr);
+        planets.printAll();
+        planets.peekAndDeleteFirst();
+        planets.peekAndDeleteLast();
+        planets.printAll();
+        planets.addFirst("Mercury");
+        planets.addLast("Neptune");
     }
 }
