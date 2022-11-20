@@ -9,6 +9,7 @@
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
+/.gradle/*
 
 # Package Files #
 *.jar
@@ -27,7 +28,7 @@ hs_err_pid*
 /gradlew.bat
 /.idea/*
 /.idea/13.iml
-/.gradle/buildOutputCleanup/buildOutputCleanup.lock
+
 /.gradle/buildOutputCleanup/cache.properties
 /.gradle/7.4/checksums/checksums.lock
 /.idea/compiler.xml
