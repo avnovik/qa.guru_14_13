@@ -1,7 +1,6 @@
 package guru.qa.hw2;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Storehouse {
 
