@@ -4,9 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Storehouse {
-    
-    Map<String, Integer> storehouse = new HashMap<>();
 
+    Map<String, Integer> storehouse = new HashMap<>();
 
     void addNewItem(String name, int num) {
         storehouse.put(name, num);
