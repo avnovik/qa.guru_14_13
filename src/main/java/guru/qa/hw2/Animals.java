@@ -18,16 +18,27 @@ public class Animals {
         System.out.println("---");
     }
 
-    void removeAnimal(int num) {
-        if (num >= 0 && num < animals.size()) {
-            animals.remove(num);
+    void whatIndex(String name) {
+        if (animals.contains(name)) {
+            int indexOf = animals.indexOf(name);
+            System.out.println("whatIndex: " + name + " --> " + indexOf);
+        } else {
+            System.out.println("ALARM!!!");
+        }
+    }
+
+    void removeAnimal(int index) {
+        if (index >= 0 && index < animals.size()) {
+            System.out.println("Delete: " + animals.get(index));
+            animals.remove(index);
+            System.out.println("---");
         } else {
             System.out.println("ALARM!!!");
         }
     }
 
     void addInto(int index, String name) {
-        if (index >= 0 && index < animals.size()) {
+        if (index >= 0 && index <= animals.size()) {
             animals.add(index, name);
         } else {
             System.out.println("ALARM!!!");
@@ -42,8 +53,5 @@ public class Animals {
         } else {
             System.out.println("ALARM!!!");
         }
-
     }
-
-
 }
