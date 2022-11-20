@@ -11,5 +11,17 @@ public class Main {
         storehouse.findProduct("Snickers");
 
 
+        TvBrands tvBrands = new TvBrands();
+        tvBrands.printAll();
+        tvBrands.addBrands("Sony");
+        tvBrands.addBrands("LG");
+        tvBrands.addBrands("Samsung");
+        tvBrands.addBrands("LG");
+        tvBrands.printAll();
+        tvBrands.findBrand("TCL");
+        tvBrands.findBrand("LG");
+        tvBrands.deleteBrand("Samsung");
+        tvBrands.printAll();
+
     }
 }
