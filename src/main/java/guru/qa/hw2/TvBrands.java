@@ -36,6 +36,5 @@ public class TvBrands {
         } else {
             System.out.println(name + " not found");
         }
-
     }
 }
